@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 
 import Top from '@/components/Top'
+import TimuIndex from '@/components/TimuIndex'
 
 Vue.use(Router)
 
@@ -13,7 +14,7 @@ export default new Router({
       components: {   
         default: HelloWorld,
         header: Top,
-        left: HelloWorld
+        left: TimuIndex
       }
     }
   ]

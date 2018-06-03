@@ -39,11 +39,10 @@ export default {
 
 }
 .left {
-    width: 250px;
-    border: 1px solid #ddd;
+    width: 300px;
 }
 .right {
   border: 1px solid #ddd;
-  margin-left: 270px;
+  margin-left: 320px;
 }
 </style>
