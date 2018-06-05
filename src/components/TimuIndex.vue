@@ -27,11 +27,11 @@
   		},
       methods: {
         getTmList: ()=> {
-          axios.get('/static/tm.json').then(function(response) {
-            this.tmArry = response.data;
-          }).catch((error) => {
-            console.log(error);
-          });
+          // axios.get('/static/tm.json').then(function(response) {
+          //   this.tmArry = response.data;
+          // }).catch((error) => {
+          //   console.log(error);
+          // });
         }
       }
 	}
