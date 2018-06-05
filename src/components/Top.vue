@@ -56,7 +56,7 @@
   		 			closeText: "关闭"
   		 		};
   		 		var _this = this;
-  		 		this.$refs.myDialog.show().then(function(){
+  		 		this.$refs.myDialog.show().then(() => {
   		 			console.log(_this.userName)
   		 		
   		 		}).catch(function(){

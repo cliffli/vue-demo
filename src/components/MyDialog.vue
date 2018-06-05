@@ -26,8 +26,7 @@
   		data() {
   			return {
 		        resolve: '',
-		        reject: '',
-		        promise: '' // 保存promise对象
+		        reject: ''
 		    }
   		},
   		mounted() {
@@ -45,11 +44,11 @@
   			show: function() {
   				$(this.$refs.myModal).modal('show');
 
-  				this.promise = new Promise((resolve, reject) => {
+  				let promise = new Promise((resolve, reject) => {
 		            this.resolve = resolve;
 		            this.reject = reject;
 		        });
-		        return this.promise;   
+		        return promise;   
   			}
   		}
 	}
