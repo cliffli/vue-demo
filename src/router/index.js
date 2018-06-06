@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import TmContent from '@/components/TmContent'
 
 import Top from '@/components/Top'
 import TimuIndex from '@/components/TimuIndex'
@@ -12,7 +12,7 @@ export default new Router({
     {
       path: '/', 
       components: {   
-        default: HelloWorld,
+        default: TmContent,
         header: Top,
         left: TimuIndex
       }
