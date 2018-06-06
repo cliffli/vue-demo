@@ -1,14 +1,7 @@
 <template>
 	<div class="tm-index-wrap">
 		  <ul class="clearfix">
-          <li> 1</li>
-          <li> 1</li>
-          <li> 1</li>
-          <li> 1</li>
-          <li> 1</li>
-          <li> 1</li>
-          <li> 1</li>
-          <li> 1</li>
+          <li v-for="(item, index) in tmArry" :key="item.TID" > {{index+1}}</li>
       </ul>
 	</div>
 </template>
@@ -26,12 +19,16 @@
   			this.getTmList();
   		},
       methods: {
-        getTmList: ()=> {
-          // axios.get('/static/tm.json').then(function(response) {
-          //   this.tmArry = response.data;
-          // }).catch((error) => {
-          //   console.log(error);
-          // });
+        getTmList() {
+          var that = this;
+
+          axios.get('/static/tm.json').then(function(response) {
+
+            that.tmArry = response.data;
+
+          }).catch((error) => {
+            console.log(error);
+          });
         }
       }
 	}
