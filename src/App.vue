@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="header">
-        <router-view name="header">考试系统</router-view>
+        <router-view name="header">KS系统</router-view>
     </div>
 
     <div class="warp clearfix">
